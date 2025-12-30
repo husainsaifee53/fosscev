@@ -138,6 +138,27 @@
             transform: translateY(-2px);
             background-color: var(--accent-hover);
         }
+        /* Social / secondary buttons next to the main CTA */
+        .hero-actions {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        .hero-btn.social-btn {
+            padding: 0.6rem 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            box-shadow: none;
+            border: 1px solid var(--border-color);
+            background-color: rgba(0,0,0,0.06);
+            color: var(--text-primary);
+        }
+        .hero-btn.social-btn:hover { transform: translateY(-2px); }
+        .hero-btn.instagram { background: linear-gradient(45deg,#F58529,#DD2A7B,#8134AF); color: #fff; border: none; }
+        .hero-btn.linkedin { background: #0A66C2; color: #fff; border: none; }
+        .hero-btn.mail { background: #6b7280; color: #fff; border: none; }
 
         /* --- MAIN CONTENT LAYOUT --- */
         .container {
@@ -287,7 +308,12 @@
         <div class="reveal active">
             <h1>Code Freedom.</h1>
             <p>Empowering the students of College of Engineering Vadakara to master Free and Open Source Software technologies.</p>
-            <a href="https://fossunited.org/c/college-of-engineering-vadakara" target="_blank" class="hero-btn">Join the Community</a>
+            <div class="hero-actions">
+                <a href="https://fossunited.org/c/college-of-engineering-vadakara" target="_blank" class="hero-btn">Join the Community</a>
+                <a href="https://www.instagram.com/fosscev" target="_blank" class="hero-btn social-btn instagram">Instagram</a>
+                <a href="https://www.linkedin.com/company/fosscev" target="_blank" class="hero-btn social-btn linkedin">LinkedIn</a>
+                <a href="fossclubcev@cev.ac.in" class="hero-btn social-btn mail">Email</a>
+            </div>
         </div>
     </header>
 
